@@ -20,6 +20,9 @@ foreach (Player p in players)
         biggestAge = p.Age; // for future loops
     }
 }
+Player p1 = players[0].Age > players[1].Age ? players[0] : players[1];
+Player p2 = players[2].Age > players[3].Age ? players[2] : players[3];
+Player p3 = p2.Age > p1.Age ? p2 : p1;
 
 Console.WriteLine($"Le plus agé est {elder.Name} qui a {elder.Age} ans");
 
